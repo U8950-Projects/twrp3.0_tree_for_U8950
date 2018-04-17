@@ -7,6 +7,5 @@
 /cust       ext4        /dev/block/mmcblk0p16   flags=display="Cust";backup=1;wipeingui
 /system     ext4        /dev/block/mmcblk0p17
 /data       ext4        /dev/block/mmcblk0p18   length=-16384
-/internal_sd    vfat    /dev/block/mmcblk0p19   flags=display="Internal Storage";storage;wipeingui
-/sdcard     vfat        /dev/block/mmcblk1p1    flags=display="Micro SD";storage;wipeingui;removable
-/apps       ext4        /dev/block/mmcblk1p2    flags=display="Apps";storage
+/internal_sd    auto    /dev/block/mmcblk0p19   flags=display="Internal Storage";storage;wipeingui
+/external_sd  auto  /dev/block/mmcblk1p1  /dev/block/mmcblk1  flags=display="Micro SDcard";storage;wipeingui;removable
